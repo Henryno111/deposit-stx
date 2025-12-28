@@ -93,6 +93,31 @@ disable_stacks_api = false
 # miner_derivation_path = "m/44'/5757'/0'/0/0"
 # faucet_mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth health outside kitten belt reform"
 # faucet_derivation_path = "m/44'/5757'/0'/0/0"
+
+# Deploy contracts to this network if it is selected as the default in the network selector
+# [devnet.network_deployments]
+# contracts =  ["stx-deposit"]
+
+# use_nakamoto = false
+# pox_stacking_orders = []
+# stacks_node_image_url = "blockstack/stacks-blockchain:3.3.0.0.1-alpine"
+# stacks_signer_image_url = "blockstack/stacks-signer:3.3.0.0.1.0-alpine"
+# stacks_api_image_url = "hirosystems/stacks-blockchain-api:latest"
+# stacks_explorer_image_url = "hirosystems/explorer:latest"
+# bitcoin_explorer_image_url = "quay.io/hirosystems/bitcoin-explorer:devnet"
+# postgres_image_url = "postgres:alpine"
+
+# epoch_2_0 = 100
+# epoch_2_05 = 100
+# epoch_2_1 = 101
+# epoch_2_2 = 102
+# epoch_2_3 = 103
+# epoch_2_4 = 104
+# epoch_2_5 = 108
+epoch_3_0 = 142
+# epoch_3_1 = 144
+# epoch_3_2 = 146
+# epoch_3_3 = 148
 # stacker_mnemonic = "empty lens any direct brother then drop fury rule pole win claim scissors list rescue horn rent inform relief jump sword weekend half legend"
 # stacker_derivation_path = "m/44'/5757'/0'/0/0"
 # orchestrator_port = 20445
@@ -118,18 +143,6 @@ disable_stacks_api = false
 # stacks_explorer_image_url = "hirosystems/explorer:latest"
 # bitcoin_explorer_image_url = "quay.io/hirosystems/bitcoin-explorer:devnet"
 # postgres_image_url = "postgres:alpine"
-
-# epoch_2_0 = 100
-# epoch_2_05 = 100
-# epoch_2_1 = 101
-# epoch_2_2 = 102
-# epoch_2_3 = 103
-# epoch_2_4 = 104
-# epoch_2_5 = 108
-# epoch_3_0 = 142
-# epoch_3_1 = 144
-# epoch_3_2 = 146
-# epoch_3_3 = 148
 
 # Send some stacking orders
 [[devnet.pox_stacking_orders]]

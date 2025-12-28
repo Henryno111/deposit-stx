@@ -7,23 +7,18 @@ cache_dir = "./.cache"
 
 [contracts.deposit-pool-trait]
 path = "contracts/deposit-pool-trait.clar"
-clarity_version = 2
 
 [contracts.task-manager-trait]
 path = "contracts/task-manager-trait.clar"
-clarity_version = 2
 
 [contracts.deposit-pool]
 path = "contracts/deposit-pool.clar"
-clarity_version = 2
 
 [contracts.task-manager]
 path = "contracts/task-manager.clar"
-clarity_version = 2
 
 [contracts.reward-distributor]
 path = "contracts/reward-distributor.clar"
-clarity_version = 2
 
 [repl.analysis]
 passes = ["check_checker"]
