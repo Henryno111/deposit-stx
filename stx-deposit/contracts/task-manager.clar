@@ -61,6 +61,7 @@
         (asserts! (is-eq tx-sender contract-owner) err-owner-only)
         (asserts! (> reward-amount u0) err-invalid-task-data)
         (asserts! (> (len title) u0) err-invalid-task-data)
+        (asserts! (> (len description) u0) err-invalid-task-data)
         
         ;; Create task
         (map-set tasks task-id {

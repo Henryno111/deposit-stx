@@ -147,6 +147,8 @@
 (define-public (set-minimum-deposit (amount uint))
     (begin
         (asserts! (is-eq tx-sender contract-owner) err-owner-only)
+        (asserts! (> amount u0) err-invalid-amount)
+        (asserts! (<= amount u100000000000) err-invalid-amount) ;; Max 100k STX
         (var-set minimum-deposit amount)
         (ok true)
     )

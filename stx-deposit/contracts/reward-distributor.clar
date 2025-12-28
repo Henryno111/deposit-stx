@@ -127,6 +127,8 @@
 (define-public (emergency-withdraw (amount uint) (recipient principal))
     (begin
         (asserts! (is-eq tx-sender contract-owner) err-owner-only)
+        (asserts! (> amount u0) err-invalid-recipient)
+        (asserts! (not (is-eq recipient contract-owner)) err-invalid-recipient)
         (try! (as-contract (stx-transfer? amount tx-sender recipient)))
         (ok true)
     )

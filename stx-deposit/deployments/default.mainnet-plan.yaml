@@ -1,0 +1,46 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: deposit-pool
+            expected-sender: SPD7WQ5ZTDXV45D3ZCY00N1WTRF106SH9XA0D979
+            cost: 46390
+            path: contracts/deposit-pool.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: deposit-pool-trait
+            expected-sender: SPD7WQ5ZTDXV45D3ZCY00N1WTRF106SH9XA0D979
+            cost: 5520
+            path: contracts/deposit-pool-trait.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: task-manager-trait
+            expected-sender: SPD7WQ5ZTDXV45D3ZCY00N1WTRF106SH9XA0D979
+            cost: 7670
+            path: contracts/task-manager-trait.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: reward-distributor
+            expected-sender: SPD7WQ5ZTDXV45D3ZCY00N1WTRF106SH9XA0D979
+            cost: 43100
+            path: contracts/reward-distributor.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: task-manager
+            expected-sender: SPD7WQ5ZTDXV45D3ZCY00N1WTRF106SH9XA0D979
+            cost: 54680
+            path: contracts/task-manager.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"
